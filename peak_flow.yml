@@ -5,9 +5,9 @@ services:
    - nproc
 
 before_script:
-   - docker info
+   - nproc
 
 build:
    stage: build
    script:
-     - docker build -t carlad/sinatra .
+     - nproc
