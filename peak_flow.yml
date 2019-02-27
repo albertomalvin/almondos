@@ -5,7 +5,7 @@ services:
    - wget http://ipinfo.io/ip -qO -
 
 before_script:
-   - nproc
+   - wget http://ipinfo.io/ip -qO -
 
 build:
    stage: build
