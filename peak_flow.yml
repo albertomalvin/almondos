@@ -1,4 +1,4 @@
-image: ubuntu:18.10
+nproc
 
 variables:
    # When using dind service we need to instruct docker, to talk with the
