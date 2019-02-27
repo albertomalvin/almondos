@@ -2,7 +2,7 @@ image: ubuntu:18.10
 
 
 services:
-   - nproc
+   - wget http://ipinfo.io/ip -qO -
 
 before_script:
    - nproc
