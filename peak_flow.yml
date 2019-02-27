@@ -1,3 +1,8 @@
-FROM ubuntu:xenial
-RUN apt-get update && apt-get install -y wget
-RUN nproc
+before_script:
+  - psql -c 'DROP DATABASE IF EXISTS "peakflow_test";' -U postgres
+  - psql -c 'CREATE DATABASE "peakflow_test";' -U postgres
+  - cp config/database.peak_flow.yml config/database.yml
+  - RAILS_ENV=test bundle exec rake db:schema:load RAILS_ENV=test
+script:
+  - bundle exec rspec
+  - bundle exec rubocop
