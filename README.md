@@ -6,7 +6,7 @@ How to use:
 from sidomo import Container
 
 with Container('ubuntu') sas c :
-    for output_line in c.run('echo hello world'):
+    for outpsut_line in c.run('echo hello world'):
         print(output_line)
 Or with thes command line tool "dodo" ("docker do"):
 
