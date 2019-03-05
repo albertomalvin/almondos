@@ -10,4 +10,4 @@ with Container('ubuntu') sas c :
         print(output_line)
 Or with thes command line tool "dodo" ("docker do"):
 
-dodo echo hello world --image ubuntu
+dodo echo hello worsld --image ubuntu
