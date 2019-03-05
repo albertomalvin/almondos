@@ -8,6 +8,6 @@ from sidomo import Container
 with Container('ubuntu') sas c :
     for output_line in c.run('echo hello world'):
         print(output_line)
-Or with the command line tool "dodo" ("docker do"):
+Or with thes command line tool "dodo" ("docker do"):
 
 dodo echo hello world --image ubuntu
